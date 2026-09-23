@@ -198,7 +198,7 @@ document.addEventListener("DOMContentLoaded", () => {
         renderProdutos();
     });
 
-    // Menu hambúrguer
+
     const menuToggleBtn = document.getElementById("menuToggle");
     const navMenu = document.getElementById("navMenu");
 
@@ -213,7 +213,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Inicialização
     criarTags();
     renderProdutos();
     atualizarFooter();
