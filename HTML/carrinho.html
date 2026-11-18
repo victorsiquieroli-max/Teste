@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Carrinho - Maré Alta</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../CSS/carrinho.css">
+</head>
+<body>
+
+  <header class="header" id="cabecalho-principal">
+    <div class="header-container">
+      <a href="../index.html" class="logo">
+        <img src="../imgs/seunome.png" alt="Logo Maré Alta" id="header-logo">
+      </a>
+
+      <nav class="nav-menu">
+        <a href="../index.html">Início</a>
+        <a href="colecao.html">Coleção</a>
+        <a href="Sobre.html">Sobre</a>
+        <a href="../index.html#contato">Contato</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="../index.html" class="btn-entrar">Entrar</a>
+        <a href="carrinho.html" class="icon-btn" aria-label="Carrinho de compras">
+          <i class="fas fa-shopping-bag"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="cart-wrapper">
+    <div class="cart-header-card">
+      <label class="custom-checkbox">
+        <input type="checkbox" id="select-all" checked>
+        <span class="checkmark"></span>
+      </label>
+      <h2>MEU CARRINHO</h2>
+    </div>
+
+    <div class="filter-bar">
+      <button type="button" class="btn-filter active">Todos os itens</button>
+    </div>
+
+   <div class="cart-items-list" id="cart-items-list"></div>
+
+    <div class="summary-card">
+      <h3 class="summary-title">Resumo do Pedido</h3>
+      <div class="summary-content">
+        <div class="selected-thumbs" id="selected-thumbs"></div>
+
+        <div class="price-box">
+          <div class="frete-box">
+  <label for="cep-carrinho">Entrega (CEP do Perfil ou outro):</label>
+  <div class="frete-input-group">
+    <input type="text" id="cep-carrinho" placeholder="00000-000" maxlength="9">
+    <button type="button" id="btn-calcular-frete">Calcular</button>
+  </div>
+  <p class="frete-resultado" id="frete-resultado">Informe um CEP para calcular o frete</p>
+</div>
+          <span class="price-label">Subtotal (itens selecionados)</span>
+          <div class="price-tag" id="total-price">R\$ 0,00</div>
+
+          <div class="payment-methods">
+            <span class="payment-title">Formas de pagamento aceitas</span>
+            <div class="payment-grid">
+              <span class="pay-icon mastercard" title="Mastercard"></span>
+              <span class="pay-icon visa" title="Visa"></span>
+              <span class="pay-icon elo" title="Elo"></span>
+              <span class="pay-icon diners" title="Diners Club"></span>
+              <span class="pay-icon amex" title="American Express"></span>
+              <span class="pay-icon boleto" title="Boleto"></span>
+              <span class="pay-icon paypal" title="PayPal"></span>
+              <span class="pay-icon picpay" title="PicPay"></span>
+              <span class="pay-icon pix" title="PIX"></span>
+              <span class="pay-icon applepay" title="Apple Pay"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="rodape-principal">
+    <div class="container-rodape">
+      <div class="grid-rodape">
+        <div class="coluna-logo-rodape">
+          <div class="brand-rodape" style="display: flex; align-items: center; gap: 8px;">
+            <img src="../imgs/seunome.png" alt="Logo Maré Alta" style="height: 55px; width: auto; object-fit: contain;">
+            <span class="texto-brand-rodape">MARE ALTA</span>
+          </div>
+          <p class="descricao-rodape">
+            Moda praia premium com alma brasileira, feita para quem vive o verão com estilo.
+          </p>
+        </div>
+        <div class="coluna-links-rodape">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="../index.html#inicio">Início</a></li>
+            <li><a href="colecao.html">Coleção</a></li>
+            <li><a href="Sobre.html">Sobre nós</a></li>
+            <li><a href="../index.html#contato">Contato</a></li>
+          </ul>
+        </div>
+        <div class="coluna-links-rodape">
+          <h4>Categorias</h4>
+          <ul>
+            <li><a href="../index.html#categorias">Biquínis</a></li>
+            <li><a href="../index.html#categorias">Maiôs</a></li>
+            <li><a href="../index.html#categorias">Saídas de praia</a></li>
+            <li><a href="../index.html#categorias">Acessórios</a></li>
+          </ul>
+        </div>
+        <div class="coluna-links-rodape">
+          <h4>Atendimento</h4>
+          <ul>
+            <li><a href="../index.html#contato">FAQ</a></li>
+            <li><a href="../index.html#contato">Trocas e devoluções</a></li>
+            <li><a href="rastreio.html">Rastrear pedido</a></li>
+            <li><a href="../index.html#contato">Fale conosco</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="linha-divisor-rodape"></div>
+      <div class="rodape-bottom">
+        <p>© 2026 MareAlta. Todos os direitos reservados.</p>
+        <div class="links-legais-rodape">
+          <a href="privacidade.html">Privacidade</a>
+          <a href="termos.html">Termos de uso</a>
+          <a href="cookies.html">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="../JS/carrinho.js"></script>
+<script src="../JS/perfil-global.js"></script>
+</body>
+</html>
